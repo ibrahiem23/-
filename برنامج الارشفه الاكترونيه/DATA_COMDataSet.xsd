@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DATA_COMDataSet" targetNamespace="http://tempuri.org/DATA_COMDataSet.xsd" xmlns:mstns="http://tempuri.org/DATA_COMDataSet.xsd" xmlns="http://tempuri.org/DATA_COMDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DATA_COMConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DATA_COMConnectionString (MySettings)" PropertyReference="ApplicationSettings.برنامج_الارشفه_الاكترونيه.My.MySettings.GlobalReference.Default.DATA_COMConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ADD_DECMTableAdapter" GeneratorDataComponentClassName="ADD_DECMTableAdapter" Name="ADD_DECM" UserDataComponentName="ADD_DECMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DATA_COMConnectionString (MySettings)" DbObjectName="ADD_DECM" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [الرقم التسلسلي], رقم_الملف, صاحب_الملف, الصف, الرف, الاداره, PDF FROM ADD_DECM</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DATA_INFOTableAdapter" GeneratorDataComponentClassName="DATA_INFOTableAdapter" Name="DATA_INFO" UserDataComponentName="DATA_INFOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DATA_COMConnectionString (MySettings)" DbObjectName="DATA_INFO" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT الرقم, الأسم, [رقم _الهاتف], [العنوان _الرئيسي] FROM DATA_INFO</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EMPLOYEETableAdapter" GeneratorDataComponentClassName="EMPLOYEETableAdapter" Name="EMPLOYEE" UserDataComponentName="EMPLOYEETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DATA_COMConnectionString (MySettings)" DbObjectName="EMPLOYEE" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT رقم_الموظف, [الأسم _كاملا], الهويه_الوطنيه, الاداره, رقم_الجوال FROM EMPLOYEE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MANGMENTTableAdapter" GeneratorDataComponentClassName="MANGMENTTableAdapter" Name="MANGMENT" UserDataComponentName="MANGMENTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DATA_COMConnectionString (MySettings)" DbObjectName="MANGMENT" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT رقم_الأداره_القسم, اسم_الاداره_القسم, المدير_الرئيس, رقم_الهاتف, رقم_جوال_الرئيس FROM MANGMENT</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DATA_COMDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DATA_COMDataSet" msprop:Generator_DataSetName="DATA_COMDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ADD_DECM" msprop:Generator_RowEvHandlerName="ADD_DECMRowChangeEventHandler" msprop:Generator_RowDeletedName="ADD_DECMRowDeleted" msprop:Generator_RowDeletingName="ADD_DECMRowDeleting" msprop:Generator_RowEvArgName="ADD_DECMRowChangeEvent" msprop:Generator_TablePropName="ADD_DECM" msprop:Generator_RowChangedName="ADD_DECMRowChanged" msprop:Generator_RowChangingName="ADD_DECMRowChanging" msprop:Generator_TableClassName="ADD_DECMDataTable" msprop:Generator_RowClassName="ADD_DECMRow" msprop:Generator_TableVarName="tableADD_DECM" msprop:Generator_UserTableName="ADD_DECM">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DATA_INFO" msprop:Generator_RowEvHandlerName="DATA_INFORowChangeEventHandler" msprop:Generator_RowDeletedName="DATA_INFORowDeleted" msprop:Generator_RowDeletingName="DATA_INFORowDeleting" msprop:Generator_RowEvArgName="DATA_INFORowChangeEvent" msprop:Generator_TablePropName="DATA_INFO" msprop:Generator_RowChangedName="DATA_INFORowChanged" msprop:Generator_RowChangingName="DATA_INFORowChanging" msprop:Generator_TableClassName="DATA_INFODataTable" msprop:Generator_RowClassName="DATA_INFORow" msprop:Generator_TableVarName="tableDATA_INFO" msprop:Generator_UserTableName="DATA_INFO">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EMPLOYEE" msprop:Generator_RowEvHandlerName="EMPLOYEERowChangeEventHandler" msprop:Generator_RowDeletedName="EMPLOYEERowDeleted" msprop:Generator_RowDeletingName="EMPLOYEERowDeleting" msprop:Generator_RowEvArgName="EMPLOYEERowChangeEvent" msprop:Generator_TablePropName="EMPLOYEE" msprop:Generator_RowChangedName="EMPLOYEERowChanged" msprop:Generator_RowChangingName="EMPLOYEERowChanging" msprop:Generator_TableClassName="EMPLOYEEDataTable" msprop:Generator_RowClassName="EMPLOYEERow" msprop:Generator_TableVarName="tableEMPLOYEE" msprop:Generator_UserTableName="EMPLOYEE">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MANGMENT" msprop:Generator_RowEvHandlerName="MANGMENTRowChangeEventHandler" msprop:Generator_RowDeletedName="MANGMENTRowDeleted" msprop:Generator_RowDeletingName="MANGMENTRowDeleting" msprop:Generator_RowEvArgName="MANGMENTRowChangeEvent" msprop:Generator_TablePropName="MANGMENT" msprop:Generator_RowChangedName="MANGMENTRowChanged" msprop:Generator_RowChangingName="MANGMENTRowChanging" msprop:Generator_TableClassName="MANGMENTDataTable" msprop:Generator_RowClassName="MANGMENTRow" msprop:Generator_TableVarName="tableMANGMENT" msprop:Generator_UserTableName="MANGMENT">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
